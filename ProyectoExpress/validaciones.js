@@ -6,7 +6,8 @@ function validarCorreo(){
 }
 
 function validarBoleta(){
-    //tarea
+    if(typeof boleta !== 'string') return false;
+    return boleta.length === 10 && /^\d+$/.test(boleta);
 }
 
 function validarContrasena(){
